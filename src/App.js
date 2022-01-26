@@ -5,6 +5,7 @@ import { useState } from 'react';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import useScript from './hooks/useScript';
+import Products from './pages/Products/Products';
 
 function App() {
   const [openFooter, setOpenFooter] = useState(false);
@@ -17,6 +18,7 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <Products openFooter={openFooter} />
       <Footer openFooter={openFooter} setOpenFooter={setOpenFooter} />
     </div>
   );
