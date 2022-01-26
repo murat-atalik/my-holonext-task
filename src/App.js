@@ -3,6 +3,7 @@ import './style/index.scss';
 import { useState } from 'react';
 
 import Footer from './components/Footer/Footer';
+import Header from './components/Header/Header';
 import useScript from './hooks/useScript';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
 
   return (
     <div className="App">
+      <Header />
       <Footer openFooter={openFooter} setOpenFooter={setOpenFooter} />
     </div>
   );

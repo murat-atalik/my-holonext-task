@@ -1,0 +1,57 @@
+@import '../../style/variables';
+header {
+  height: $header-height;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  background-color: $white-500;
+  box-shadow: 0px 3px 3px 0px $grey-100;
+  -webkit-box-shadow: 0px 3px 3px 0px $grey-100;
+  -moz-box-shadow: 0px 3px 3px 0px $grey-100;
+  padding: 10px;
+}
+.header-container {
+  margin: 0px 60px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .header-image {
+    width: get-vw(200px);
+    min-width: 150px;
+    height: auto;
+    > img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .header-button {
+    font-size: 20px;
+    font-weight: bold;
+    color: $footer-blue-light;
+    outline: transparent;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .header-button {
+    > p {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .header-container {
+    margin: 0px;
+  }
+}
