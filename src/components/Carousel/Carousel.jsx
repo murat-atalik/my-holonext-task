@@ -2,6 +2,8 @@ import './carousel.scss';
 
 import React, { useState } from 'react';
 
+import Product from '../Product/Product';
+
 function Carousel({ products }) {
   const [translateX, setTranslateX] = useState(0);
 
@@ -29,7 +31,7 @@ function Carousel({ products }) {
           key={product.id}
           style={{ transform: `translateX(${translateX}%)` }}
         >
-          <p>{product.title}</p>
+          <Product product={product} />
         </div>
       ))}
       <button
