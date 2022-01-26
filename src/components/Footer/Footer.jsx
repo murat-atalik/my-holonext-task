@@ -1,7 +1,6 @@
 import './footer.scss';
 
-import React from 'react';
-import { useState } from 'react/cjs/react.development';
+import React, { useState } from 'react';
 
 import logo from '../../assets/images/holonext-logo.png';
 
