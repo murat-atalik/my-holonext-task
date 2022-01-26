@@ -1,4 +1,4 @@
-import './products.scss';
+import './product.scss';
 
 import React from 'react';
 
