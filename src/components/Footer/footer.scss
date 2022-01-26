@@ -1,0 +1,145 @@
+@import '../../style/variables';
+
+footer {
+  width: 100%;
+  min-height: $footer-height-closed;
+  height: auto;
+  background-color: $footer-blue;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding-left: 60px;
+}
+
+.open-menu-button,
+.close-menu-button {
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  margin: 5px;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  outline: none;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: $footer-blue;
+  color: $footer-blue-light;
+  &:hover {
+    color: $footer-blue;
+    background-color: $footer-blue-light;
+  }
+}
+.close-menu-container-hidden {
+  visibility: hidden;
+  display: none;
+}
+.close-menu-container {
+  width: 70%;
+  height: auto;
+  margin: 20px 0px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 18px;
+
+  animation-duration: 0.5s;
+  animation-name: closeAnimation;
+  transform: translateX(-20px);
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+    > a {
+      text-decoration: none;
+      color: $footer-blue-light;
+      line-height: 125%;
+    }
+  }
+  .logo {
+    width: auto;
+    height: auto;
+    > img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.footer-open {
+  animation-duration: 0.5s;
+  animation-name: openAnimation;
+}
+.footer-close {
+  animation-duration: 0.5s;
+  animation-name: closeAnimation;
+}
+.image-open {
+  animation-duration: 0.5s;
+  animation-name: closeImg;
+}
+.image-close {
+  animation-duration: 0.5s;
+  animation-name: openImg;
+}
+@keyframes closeAnimation {
+  from {
+    height: 80px;
+    font-size: 0;
+    color: transparent;
+  }
+  to {
+    height: auto;
+    color: $footer-blue-light;
+    font-size: 18px;
+  }
+}
+@keyframes openAnimation {
+  from {
+    height: auto;
+    color: transparent;
+    font-size: 18px;
+  }
+  to {
+    height: 80px;
+    color: transparent;
+    font-size: 0;
+  }
+}
+@keyframes closeImg {
+  from {
+    width: 100%;
+    opacity: 1;
+  }
+  to {
+    width: 30%;
+    opacity: 0;
+  }
+}
+@keyframes openImg {
+  from {
+    width: 30%;
+    opacity: 0;
+  }
+  to {
+    width: 100%;
+    opacity: 1;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .close-menu-container {
+    height: 170px;
+    display: block;
+  }
+}
