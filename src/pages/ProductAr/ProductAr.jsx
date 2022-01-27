@@ -11,16 +11,22 @@ import useScript from '../../hooks/useScript';
 
 function ProductAr({ openFooter }) {
   const { sceneId } = useParams();
+
   useScript(
     'https://holonext.azurewebsites.net/public/js/hn-sdk-embed-v4-without-variants.js'
   );
+
+  if (!sceneId) {
+    return <div>Loading...</div>;
+  }
+
   return (
     <div className={!openFooter ? 'product-ar' : 'product-ar-footer'}>
       <div className="product-ar-container">
         <div className="product-ar-viewer">
-          <holonext-viewer sceneid={sceneId} />
+          <holonext-viewer sceneId={sceneId} />
         </div>
-        <a href="/my-holonext-task" className="prev-page-button">
+        <a href="/my-holonext-task/" className="prev-page-button">
           <i className="fas fa-chevron-left" />
         </a>
       </div>

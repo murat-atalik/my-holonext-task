@@ -21,7 +21,7 @@ function Product({ product }) {
           </div>
         </div>
 
-        <Link to={product.sceneId} className="product-detail-card">
+        <Link to={`/${product.sceneId}`} className="product-detail-card">
           <div className="view-in-3d">
             <div className="circle">
               <i className="fas fa-caret-up" />
