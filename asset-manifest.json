@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/my-holonext-task/static/css/main.f0c01b7b.css",
-    "main.js": "/my-holonext-task/static/js/main.1f28d27b.js",
+    "main.js": "/my-holonext-task/static/js/main.f4174953.js",
     "static/js/787.567a4bc0.chunk.js": "/my-holonext-task/static/js/787.567a4bc0.chunk.js",
     "index.html": "/my-holonext-task/index.html",
     "main.f0c01b7b.css.map": "/my-holonext-task/static/css/main.f0c01b7b.css.map",
-    "main.1f28d27b.js.map": "/my-holonext-task/static/js/main.1f28d27b.js.map",
+    "main.f4174953.js.map": "/my-holonext-task/static/js/main.f4174953.js.map",
     "787.567a4bc0.chunk.js.map": "/my-holonext-task/static/js/787.567a4bc0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f0c01b7b.css",
-    "static/js/main.1f28d27b.js"
+    "static/js/main.f4174953.js"
   ]
 }
