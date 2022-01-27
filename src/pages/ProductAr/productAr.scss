@@ -1,7 +1,7 @@
 @import './../../style/variables';
 .product-ar {
   width: 100%;
-  height: calc(100vh - 160px);
+  height: calc(100vh - 80px);
   position: relative;
   background-color: $white-200;
 }
@@ -9,7 +9,6 @@
   width: 100%;
   height: calc(100vh - 230px);
   position: relative;
-  background-color: red;
 }
 .product-ar-container {
   width: 100vw;
@@ -23,7 +22,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  color: $footer-blue;
+  color: $holo-blue;
   font-size: 25px;
   background-color: transparent;
   outline: transparent;
@@ -38,7 +37,7 @@
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.1);
     transition: 0.5s;
-    color: $footer-blue;
+    color: $holo-blue;
   }
 }
 @media only screen and (max-width: 600px) {

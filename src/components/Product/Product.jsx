@@ -22,15 +22,12 @@ function Product({ product }) {
         </div>
 
         <Link to={`/${product.sceneId}`} className="product-detail-card">
-          <div className="view-in-3d">
+          <div className="product-detail-ar">
             <div className="circle">
               <i className="fas fa-caret-up" />
               <i className="fas fa-caret-down" />
             </div>
-            <span>360</span>
-            <div className="text">
-              <h3>Augmented Reality</h3>
-            </div>
+            <h2>Augmented Reality</h2>
           </div>
         </Link>
       </div>

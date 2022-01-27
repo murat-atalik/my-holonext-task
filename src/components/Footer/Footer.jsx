@@ -43,7 +43,7 @@ function Footer({ openFooter, setOpenFooter }) {
           className={
             !openFooter
               ? 'close-menu-container-hidden'
-              : `close-menu-container ${containerClass}`
+              : `close-menu-container ${containerClass}-container`
           }
         >
           <div className="logo">

@@ -1,10 +1,8 @@
 @import '../../style/variables';
 
 footer {
-  width: 100%;
   min-height: $footer-height-closed;
   height: auto;
-  background-color: $footer-blue;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -15,8 +13,7 @@ footer {
   padding-left: 60px;
 }
 
-.open-menu-button,
-.close-menu-button {
+%menu-btn {
   position: absolute;
   top: 10px;
   left: 0px;
@@ -30,13 +27,23 @@ footer {
   border: none;
   border-radius: 10px;
   padding: 10px;
-  background-color: $footer-blue;
-  color: $footer-blue-light;
+}
+.open-menu-button {
+  @extend %menu-btn;
+  color: $holo-blue;
+  background-color: $white-200;
   &:hover {
-    color: $footer-blue;
-    background-color: $footer-blue-light;
+    color: $holo-blue-light;
+
+    background-color: rgba($color: $holo-blue, $alpha: 0.1);
   }
 }
+.close-menu-button {
+  color: $holo-blue-light;
+  background-color: transparent;
+  @extend %menu-btn;
+}
+
 .close-menu-container-hidden {
   visibility: hidden;
   display: none;
@@ -63,7 +70,7 @@ footer {
     padding: 10px 0px;
     > a {
       text-decoration: none;
-      color: $footer-blue-light;
+      color: $holo-blue-light;
       line-height: 125%;
     }
   }
@@ -80,8 +87,39 @@ footer {
 .footer-open {
   animation-duration: 0.5s;
   animation-name: openAnimation;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
 }
 .footer-close {
+  width: 100vw;
+  animation-duration: 0.5s;
+  animation-name: closeAnimation;
+  background-color: $holo-blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.footer-open-container {
+  width: 70vw;
+
+  animation-duration: 0.5s;
+  animation-name: openAnimation;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.footer-close-container {
+  width: 70vw;
   animation-duration: 0.5s;
   animation-name: closeAnimation;
 }
@@ -95,13 +133,13 @@ footer {
 }
 @keyframes closeAnimation {
   from {
-    height: 80px;
+    height: 0px;
     font-size: 0;
     color: transparent;
   }
   to {
     height: auto;
-    color: $footer-blue-light;
+    color: $holo-blue-light;
     font-size: 18px;
   }
 }
@@ -109,12 +147,16 @@ footer {
   from {
     height: auto;
     color: transparent;
+    background-color: $holo-blue;
+    width: 100vw;
     font-size: 18px;
   }
   to {
-    height: 80px;
+    height: 0px;
     color: transparent;
     font-size: 0;
+    width: 100vw;
+    background-color: transparent;
   }
 }
 @keyframes closeImg {
