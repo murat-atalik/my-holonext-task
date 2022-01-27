@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/my-holonext-task/static/css/main.f0c01b7b.css",
-    "main.js": "/my-holonext-task/static/js/main.f4174953.js",
+    "main.css": "/my-holonext-task/static/css/main.11a2d0d1.css",
+    "main.js": "/my-holonext-task/static/js/main.b456e285.js",
     "static/js/787.567a4bc0.chunk.js": "/my-holonext-task/static/js/787.567a4bc0.chunk.js",
     "index.html": "/my-holonext-task/index.html",
-    "main.f0c01b7b.css.map": "/my-holonext-task/static/css/main.f0c01b7b.css.map",
-    "main.f4174953.js.map": "/my-holonext-task/static/js/main.f4174953.js.map",
+    "main.11a2d0d1.css.map": "/my-holonext-task/static/css/main.11a2d0d1.css.map",
+    "main.b456e285.js.map": "/my-holonext-task/static/js/main.b456e285.js.map",
     "787.567a4bc0.chunk.js.map": "/my-holonext-task/static/js/787.567a4bc0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f0c01b7b.css",
-    "static/js/main.f4174953.js"
+    "static/css/main.11a2d0d1.css",
+    "static/js/main.b456e285.js"
   ]
 }
